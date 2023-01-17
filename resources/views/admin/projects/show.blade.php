@@ -11,9 +11,9 @@
             <p>{{ $project->slug }}</p>
         </div>
 
-        <div class="technologys">
-            @forelse ($project->technologys as $technologys)
-                <span>+{{ $technologys->name }}</span>
+        <div class="technologies">
+            @forelse ($project->technologies as $technologies)
+                <span>+{{ $technologies->name }}</span>
             @empty
                 <span>Nessun tag</span>
             @endforelse

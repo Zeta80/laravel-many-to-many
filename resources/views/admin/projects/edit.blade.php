@@ -28,9 +28,9 @@
 
                     <div class="form-group mb-3">
                         <h4>Tech</h4>
-                        @foreach ($technologys as $technology)
+                        @foreach ($technologies as $technology)
                             <div class="form-check">
-                                <input type="checkbox" name="technologys[]" id="technology-{{ $technology->id }}"
+                                <input type="checkbox" name="technologies[]" id="technology-{{ $technology->id }}"
                                     class="form-check-input" value="{{ $technology->id }}">
                                 <label for="technology-{{ $technology->id }}"
                                     class="form-check-label">{{ $technology->name }}</label>
