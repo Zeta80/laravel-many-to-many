@@ -10,6 +10,15 @@
             <h5>{{ $project->created_at }}</h5>
             <p>{{ $project->slug }}</p>
         </div>
+
+        <div class="technologys">
+            @forelse ($project->technologys as $technologys)
+                <span>+{{ $technologys->name }}</span>
+            @empty
+                <span>Nessun tag</span>
+            @endforelse
+        </div>
+
         <p class="mt-3">{{ $project->description }}</p>
     </div>
 @endsection
